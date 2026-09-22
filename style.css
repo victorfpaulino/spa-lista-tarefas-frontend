@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e8e4df;
+    background-image: url("imagens/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.tarefa {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+#mensagem {
+    margin-top: 15px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    display: none;
+}
+
+#mensagem.sucesso {
+    display: block;
+    background-color: #e8f5e9;
+    color: #237a3b;
+    border: 1px solid #a5d6a7;
+}
+
+#mensagem.erro {
+    display: block;
+    background-color: #fde8e8;
+    color: #b42318;
+    border: 1px solid #f5b5b5;
+}
+
+.tarefa button {
+    margin-right: 8px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.botao-excluir {
+    background-color: #dc2626;
+}
+
+.botao-excluir:hover {
+    background-color: #b91c1c;
+}
+
+.botao-editar {
+    background-color: #2563eb;
+}
+
+.botao-editar:hover {
+    background-color: #1d4ed8;
+}
+
+button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
